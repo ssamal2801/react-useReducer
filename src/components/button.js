@@ -1,9 +1,9 @@
 const Button = ({ task, text, dispatch }) => {
   const executeTask = (task) => {
     if (task === "increment") {
-      alert("i");
+      dispatch({ type: "increment" });
     } else if (task === "decrement") {
-      alert("d");
+      dispatch({ type: "decrement" });
     }
   };
 
